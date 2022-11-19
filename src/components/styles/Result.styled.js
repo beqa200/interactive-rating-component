@@ -6,6 +6,11 @@ export const Card = styled.div`
     width: 412px;
     height: 416px;
 
+    @media (max-width: 568px) {
+        width: 327px;
+        height: 400px;
+  }
+
     img{
         display: block;
         margin: auto;
@@ -30,6 +35,11 @@ export const Card = styled.div`
         height: 43px;
         color: white;
         font-size: 28px;
+
+        @media (max-width: 568px) {
+        font-size: 24px;
+        text-align: center;
+  }
     }
 
     .text {
@@ -38,5 +48,9 @@ export const Card = styled.div`
         text-align: center;
         font-size: 15px;
         color: #969FAD;
+
+        @media (max-width: 568px) {
+        width: 279px;
+  }
     }
 `

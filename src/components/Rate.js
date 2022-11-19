@@ -19,12 +19,12 @@ function Rate(props) {
         <div>
           {numbers.map(number => 
             <button 
-              className={props.rate == number ? 'isActive' : 'isNotActive'} 
+              className={props.rate == number ? 'isActive num' : 'isNotActive num'} 
               key={number} onClick={() => {
               props.setRate(number);
               props.setChoose(true);
               props.setSubmit(false);
-            }}>{number}</button>
+            }} >{number}</button>
           )}
         </div>
         

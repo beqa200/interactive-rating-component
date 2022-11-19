@@ -6,12 +6,19 @@ export const Card = styled.div`
     width: 412px;
     height: 416px;
 
+    @media (max-width: 568px) {
+        width: 327px;
+        height: 400px;
+  }
+
     img {
         padding: 16px;
         border-radius: 100%;
         background-color: #262E38;
         margin-top: 32px;
         margin-left: 32px;
+
+        
     }
 
     h1 {
@@ -19,6 +26,10 @@ export const Card = styled.div`
         margin-left: 32px;
         margin-top: 30px;
         font-size: 28px;
+
+        @media (max-width: 568px) {
+        font-size: 24px;
+        }
     }
 
     p {
@@ -29,7 +40,14 @@ export const Card = styled.div`
         width: 340px;
         height: 72px;
         line-height: 24px;
+
+        @media (max-width: 568px) {
+        width: 279px;
+        font-size: 14px;
+        }
     }
+
+    
 
     div {
         margin-left: 32px;
@@ -37,6 +55,10 @@ export const Card = styled.div`
         display: flex;
         width: 371px;
         height: 60px;
+
+        @media (max-width: 568px) {
+        width: 285px
+        }
         
         align-items: center;
         button {
@@ -47,7 +69,11 @@ export const Card = styled.div`
             border-radius: 100%;
             border: none;
             cursor: pointer;
-            
+
+            @media (max-width: 568px) {
+                width: 41px;
+                height: 41px;
+            }
         }
     }
 
@@ -64,6 +90,11 @@ export const Card = styled.div`
         cursor: pointer;
         border: none;
         width: 341px; 
+
+        @media (max-width: 568px) {
+        margin-top: 24px;
+        width: 279px;
+        }
     }
 
     .submit:hover {
